@@ -13,7 +13,7 @@ date: 2013-03-29 10:34:31
 1、导入AOP库，里面包含aspectj的库。
 
 2、配置文件中需要配置aspectj的支持（红色标注处）
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
@@ -30,7 +30,7 @@ date: 2013-03-29 10:34:31
  
 
 3、在AspectBean中配置切入点
-```
+```java
 packagecom.jayxhj.ch08.pojos;
  
 import org.aspectj.lang.ProceedingJoinPoint;

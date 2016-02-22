@@ -16,7 +16,7 @@ date: 2014-08-08 16:07:59
 1.  书中所说索引分为单列索引，主键索引以及联合索引；
 2.  在数据库的GUI软件中却可以对一个表设置三种类型的索引：分别为normal、unique、full text；
 3.  在MySQL manual中创建index的语法为
-```
+```sql
 CREATE [UNIQUE|FULLTEXT|SPATIAL] INDEX index_name
 [USING index_type]    
 ON tbl_name (index_col_name,...)    

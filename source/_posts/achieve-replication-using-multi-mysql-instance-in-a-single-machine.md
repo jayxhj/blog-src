@@ -27,7 +27,7 @@ date: 2015-09-22 22:37:32
 4. transfer data from master to slave (mysqldump 、 mysqlimport)
 5. on the master `UNLOCK TABLES;`
 6. Setting the Replication Slave Configuration
-  ```
+  ```sql
   CHANGE MASTER TO
   MASTER_HOST='master_host_name',
   MASTER_USER='replication_user_name',

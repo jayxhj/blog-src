@@ -46,7 +46,7 @@ JSON view GitHub 官网介绍了其有如下 feature
 # PHP 配合 JSON viewer 进行输出调试
 
 PHP 中用来处理 JSON 使用最多的是 json_encode 和 json_decode ，比如你有 array 有如下结构
-```
+```php
 $arr = array(
             'key1'  => 1,
             1       => 'string',
@@ -58,7 +58,7 @@ $arr = array(
 ```
 
 如果使用 var_dump 输出，那么长的是这样 
-```
+```php
 Array
 (
     [key1] => 1

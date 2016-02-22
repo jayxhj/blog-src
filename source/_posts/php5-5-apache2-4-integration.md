@@ -19,7 +19,7 @@ PHP官网提示：如果你的 Apache 是在 apache.org 上下载的，那么你
 2. 配置PHP5.5 :将下载的PHP5.5的文件解压到某一目录，将目录里的php.ini-production文件另存为php.ini，修改其中的doc_dir, 如doc_root ="C:/Apache24/htdocs"，extension_dir = "d:/php/ext"
 
 3. 修改Apache的httpd.conf文件，添加如下语句
-```
+```apacheconf
 LoadModule php5_module "c:/php/php5apache2.dll"
 AddHandler application/x-httpd-php .php
 ```

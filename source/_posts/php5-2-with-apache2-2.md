@@ -22,7 +22,7 @@ Apache:httpd-2.2.25-win32-x86-openssl-0.9.8y.msi
 步骤：安装Apache，按说明依次操作即可。解压PHP到某一目录。
 
 在apache的http.conf文件中加入以下代码：
-```
+```apacheconf
 LoadModule php5_module &quot;c:/php/php5apache2_2.dll;
 AddHandler application/x-httpd-php .php
 ```

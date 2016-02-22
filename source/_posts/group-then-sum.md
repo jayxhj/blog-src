@@ -22,7 +22,7 @@ tags:
 总结：当需要进行对某一列的具有相似条件（对应于where中的条件）的数据进行合并时，使用group by将记录分组，再使用聚合函数对数据进行需要的操作。这样就可以使用一条语句将所有的数据进行分组求和。
 
 创建例子中的数据的SQL语句为
-```
+```sql
  CREATE DATABASE /*!32312 IF NOT EXISTS*/`group` /*!40100 DEFAULT CHARACTER SET utf8 */;
  USE `group`;
  /*Table structure for table `test` */ 
@@ -39,7 +39,7 @@ PRIMARY KEY (`id`)
 insert  into `test`(`id`,`record_date`,`record_type`,`c`,`d`) values (1,'2013-10-14',1,1000,10000),(2,'2013-10-15',1,2000,20000),(3,'2013-10-14',2,3000,30000),(4,'2013-10-15',2,4000,40000),(5,'2013-10-14',3,5000,50000);
 ```
 查询语句为
-```
+```sql
 SELECT SUM(c) 'c列数据的和',SUM(d)'d列数据的和'
 FROM test
 WHERE record_date BETWEEN '2013-10-13' AND '2013-10-16'    

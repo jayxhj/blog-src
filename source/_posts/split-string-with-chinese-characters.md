@@ -12,7 +12,7 @@ date: 2013-11-23 15:36:23
 
 这两个函数都是获取子字符串，而 mb_substr() 一般在字符串中包含中文的情况下使用。其中有个很重要的区别是 mb_substr() 按字来切分字符串，不管中英文。
 例子如下
-```
+```php
 <?php
 $operation="中文test英文abc";
 var_dump(strlen($operation));
@@ -24,7 +24,7 @@ var_dump($price);
 ```
 
 //输出为
-```
+```php
 int 19
 string ‘中文test英文abc’ (length=19)
 string ‘中文test英文abc’ (length=19)
