@@ -20,21 +20,20 @@ date: 2015-09-22 22:37:32
   
 
 ## set-up replication steps
-
 1. enable binary logging of master
 2. stop writing `FLUSH TABLES WITH READ LOCK;`
 3. obtain binary log file name and position for slave
 4. transfer data from master to slave (mysqldump 、 mysqlimport)
 5. on the master `UNLOCK TABLES;`
 6. Setting the Replication Slave Configuration
-  ```sql
-  CHANGE MASTER TO
-  MASTER_HOST='master_host_name',
-  MASTER_USER='replication_user_name',
-  MASTER_PASSWORD='replication_password',
-  MASTER_LOG_FILE='recorded_log_file_name',
-  MASTER_LOG_POS=recorded_log_position;
-  ```
+```sql
+CHANGE MASTER TO
+MASTER_HOST='master_host_name',
+MASTER_USER='replication_user_name',
+MASTER_PASSWORD='replication_password',
+MASTER_LOG_FILE='recorded_log_file_name',
+MASTER_LOG_POS=recorded_log_position;
+```
 7. check master and slave status `SHOW VARIABLES LIKE 'server_id'`
 8. in slave `START SLAVE`
 
@@ -46,14 +45,13 @@ mysql_secure_installation 作用：
 
 * set root password,
 * disallowing root login remotely,
-* removing anonymous user accounts after first installation and
+* removing anonymous user accounts after first installation
 * removing test database which can be accessed by any users
 
-  但是 mysql_secure_installation 无法指定命令参数（[5.7](https://dev.mysql.com/doc/refman/5.1/en/mysql-secure-installation.html) 可以指定参数以后可以直接指定，之前的版本无法指定），会使用默认的配置，导致新安装的实例安全配置无法更新
-  配置位置 `/var/lib/mysql/mysql2.sock`
+但是 mysql_secure_installation 无法指定命令参数（[5.7](https://dev.mysql.com/doc/refman/5.1/en/mysql-secure-installation.html) 可以指定参数以后可以直接指定，之前的版本无法指定），会使用默认的配置，导致新安装的实例安全配置无法更新
+配置位置 `/var/lib/mysql/mysql2.sock`
 
-  有两种方法可以解决执行 mysql_secure_installation 时应用到指定实例：
-
+有两种方法可以解决执行 mysql_secure_installation 时应用到指定实例：
   `[root@iZ25qtxg0q6Z ~]# which mysql_secure_installation
   /usr/bin/mysql_secure_installation`
 

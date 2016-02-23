@@ -34,48 +34,48 @@ tags:
 
 样例:www.baidu.com转换后为 www.baidu.com?f=top 
 www.baidu.com?r=test转换后为 www.baidu.com?r=test&f=top
-
-    function addparam(){
-     $( "a").each( function () {
-         var realhref = $.trim($( this).attr( 'href'));
-         var href = '';
-         if (realhref.indexOf( '?') === -1) {
-             href = realhref;
-         } else {
-             if (realhref.indexOf( '&') === -1) {
-                 if (realhref.indexOf( 'f=') === -1) {
-                     href = realhref;
-                 } else {
-                     var hrefarr = realhref.split( '&');
-                     var length = hrefarr.length - 1;
-                     for ( var i = 0; i < length; i++) {
-                         href += hrefarr[i] + '&';
-                     }
-                     href = href.substring(0, href.length - 1);
-                 }
-             } else {
-                 var hrefarr = realhref.split( '&');
-                 if (realhref.indexOf( 'f=') === -1) {
-                     href = realhref;
-                 } else {
-                     var length = hrefarr.length - 1;
-                     for ( var i = 0; i < length; i++) {
-                         href += hrefarr[i] + '&';
-                     }
-                     href = href.substring(0, href.length - 1);
-                 }
-             }
-         }
-         if (!~href.indexOf( 'javascript:') && href !== '') {
-             var parent = $( this).parents();
-             for ( var j = 0; j <= parent.length; j++) {
-                 if ( typeof ($(parent[j]).attr( 'from')) != 'undefined') {
-                     $( this).attr( 'href', href + (href.indexOf('?' ) === -1 ? '?' : '&' ) + 'f=' + $(parent[j]).attr('from' ));
-                     break;
-                 }
-             }
-         }
-     });
-     }
-
+```javascript
+function addparam() {
+    $("a").each(function () {
+        var realhref = $.trim($(this).attr('href'));
+        var href = '';
+        if (realhref.indexOf('?') === -1) {
+            href = realhref;
+        } else {
+            if (realhref.indexOf('&') === -1) {
+                if (realhref.indexOf('f=') === -1) {
+                    href = realhref;
+                } else {
+                    var hrefarr = realhref.split('&');
+                    var length = hrefarr.length - 1;
+                    for (var i = 0; i < length; i++) {
+                        href += hrefarr[i] + '&';
+                    }
+                    href = href.substring(0, href.length - 1);
+                }
+            } else {
+                var hrefarr = realhref.split('&');
+                if (realhref.indexOf('f=') === -1) {
+                    href = realhref;
+                } else {
+                    var length = hrefarr.length - 1;
+                    for (var i = 0; i < length; i++) {
+                        href += hrefarr[i] + '&';
+                    }
+                    href = href.substring(0, href.length - 1);
+                }
+            }
+        }
+        if (!~href.indexOf('javascript:') && href !== '') {
+            var parent = $(this).parents();
+            for (var j = 0; j <= parent.length; j++) {
+                if (typeof ($(parent[j]).attr('from')) != 'undefined') {
+                    $(this).attr('href', href + (href.indexOf('?') === -1 ? '?' : '&' ) + 'f=' + $(parent[j]).attr('from'));
+                    break;
+                }
+            }
+        }
+    });
+}
+```
 具体可参看[股票雷达网站](http://www.gu360.com/)
