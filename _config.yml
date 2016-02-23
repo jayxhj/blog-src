@@ -75,6 +75,7 @@ deploy:
 plugins:
 - hexo-generator-feed
 - hexo-generator-sitemap
+- hexo-filter-auto-spacing
 
 
 #feed
@@ -83,3 +84,6 @@ feed:
   path: atom.xml
   limit: 20
   hub:
+
+#duoshuo/Disqus
+disqus_shortname: githubiojayxhj

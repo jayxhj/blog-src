@@ -1,7 +1,8 @@
 # Header
 menu:
   Home: /
-  Archives: /archives
+  历史文章: /archives
+  GitHub: https://github.com/jayxhj
 rss: /atom.xml
 
 # Content
@@ -11,11 +12,10 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
+- recent_posts
 - tagcloud
 - archive
-- recent_posts
+- links
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -25,12 +25,19 @@ index_widgets:
 
 # widget behavior
 archive_type: 'monthly'
-show_count: false
+show_count: true
+format: YYYY 年 MM 月
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-27843739-2
 favicon: /favicon.png
-twitter:
+twitter: jayxhj
 google_plus:
 fb_admins:
 fb_app_id:
+
+# Links
+links:
+  顺流而下，把梦做完。: http://ceix.me/
+  嗨军: http://likangjun.com/
+  张辉|Ecli2h: http://www.ecli2h.net/
