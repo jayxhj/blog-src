@@ -27,8 +27,6 @@ date: 2013-03-29 10:34:31
 </beans>
 ```
 
- 
-
 3、在AspectBean中配置切入点
 ```java
 packagecom.jayxhj.ch08.pojos;
@@ -42,10 +40,6 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 ```
-
- 
-
- 
 
 <span style="color:#ff0000;">@Aspect //必须放在类的前面</span>
 
@@ -65,17 +59,18 @@ import org.aspectj.lang.annotation.Pointcut;
 &lt;/beans&gt;<br>
  <br>
 3、在 AspectBean 中配置切入点 <br>
-<strong>package</strong>com.jayxhj.ch08.pojos;<br>
- <br>
-<strong>import</strong>org.aspectj.lang.ProceedingJoinPoint;<br>
-<strong>import</strong>org.aspectj.lang.annotation.After;<br>
-<strong>import</strong>org.aspectj.lang.annotation.Around;<br>
-<strong>import</strong>org.aspectj.lang.annotation.AfterThrowing;<br>
-<strong>import</strong>org.aspectj.lang.annotation.AfterReturning;<br>
-<strong>import</strong>org.aspectj.lang.annotation.Aspect;<br>
-<strong>import</strong>org.aspectj.lang.annotation.Before;<br>
-<strong>import</strong>org.aspectj.lang.annotation.Pointcut;<br>
- <br>
+```java
+packagecom.jayxhj.ch08.pojos;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+```
  <br>
 <span style="color:#ff0000;">@Aspect //必须放在类的前面</span> <br>
 <strong>public</strong><strong>class</strong> AspectBean {<br>

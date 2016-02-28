@@ -2,7 +2,7 @@
 title: 少年，请好好珍惜
 id: 91
 categories:
-  - 未分类
+  - uncategorized
 date: 2013-01-13 06:23:00
 tags:
 ---

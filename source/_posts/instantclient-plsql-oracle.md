@@ -9,7 +9,7 @@ categories:
 date: 2013-05-13 19:22:50
 ---
 
-**<a>PLSQL连接Oracle</a>**
+**PLSQL连接Oracle**
 
 Windows装Oracle 11g ，PLSQL Developer使用出现以下问题：
 
@@ -18,28 +18,20 @@ Windows装Oracle 11g ，PLSQL Developer使用出现以下问题：
 2、强制输入用户名、密码及Database，登录弹出：
 
 错误内容引用
-
+```
 Initialzation error
-
 Could not initialize
-
-&quot;....&quot;
-
+"...."
 Make sure you have the 32 bits Oracle Client installed.
 
 OracleHomeKey:
-
 OracleHomeDir:...
-
 Found:oci.dll
-
 Using:
-
 ...
-
 Loadlibrary(...)
-
 returned 0
+```
 
 **解决办法**：
 
@@ -66,7 +58,7 @@ D:\instantclient_11_2\oci.dll
 tnsnames.ora，并保存到安装目录：D:\instantclient_11_2
 
 tnsnames.ora内容如下
-```
+```sql
 SERVICE_NAME=
   (DESCRIPTION =
     (ADDRESS_LIST =
