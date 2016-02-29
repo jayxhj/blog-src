@@ -72,6 +72,7 @@ deploy:
   repo:
       github: git@github.com:jayxhj/jayxhj.github.io.git
       gitcafe: git@gitcafe.com:jayxhj/jayxhj.git,gitcafe-pages
+      coding.net: git@git.coding.net:jayxhj/jayxhj.git,coding-pages
   branch: master
 
 plugins:
