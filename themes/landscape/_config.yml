@@ -30,6 +30,7 @@ format: YYYY 年 MM 月
 
 # Miscellaneous
 google_analytics: UA-27843739-2
+baidu_analytics: true
 favicon: /favicon.png
 twitter: jayxhj
 google_plus:
