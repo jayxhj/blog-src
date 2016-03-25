@@ -33,26 +33,26 @@ PHP 里可以在 php.ini 中设置 **`date.timezone`** 选项来设置时区，�
 lumen 的时区设置有数据库操作的时区设置以及与使用时间相关的函数的时区设置。
 
 ### 日期相关设置
-在 lumen 中应用程序的入口，会 new 一个 Application 实例，这个实例会读取 env 配置文件中的 **APP_TIMEZONE** 配置，若没有配置则会使用 UTC 时间。Application 位于 
-
-```php
-/path/to/project/vendor/laravel/lumen-framework/src/Application.php
-```
-
-所以最好是在 .env 中设置时区 `APP_TIMEZONE=PRC` 。
+在 lumen 中应用程序的入口，会 new 一个 Application 实例，这个实例会读取 env 配置文件中的 **APP_TIMEZONE** 配置，若没有配置则会使用 UTC 时间。Application 位于 `/path/to/project/vendor/laravel/lumen-framework/src/Application.php` 。所以最好是在 .env 中设置时区 `APP_TIMEZONE=PRC` 。
 
 ### 数据库
-数据库的时区设置可以在 config 的 database 文件中设置。database 文件分两个，一个是框架级别，一个是项目级别。框架级别的文件位于 
+数据库的时区设置可以在 config 的 database 文件中设置。database 文件分两个，一个是框架级别，一个是项目级别。框架级别的文件位于 `/path/to/project/vendor/laravel/lumen-framework/config/database.php` ，而项目级别的文件位于 `/path/to/project/config/database.php` 。
 
-```php
-/path/to/project/vendor/laravel/lumen-framework/config/database.php
+此配置是和 MySQL 相关的，所以关键字当然是去 MySQL 中找。在 [MySQL 时区设置](https://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html) 文档中可以看到，有以下三种配置
+
+```sql
+1. SYSTEM 表示与系统时区相同
+2. '+10:00' or '-6:00' 表示与 UTC 时间的一个偏移量
+3. 'Europe/Helsinki', 'US/Eastern', or 'MET' 表示命名时区，命名时区必须在 mysql 库下的 time_zone_name 有注册
 ```
 
-而项目级别的文件位于 
- ```php
- /path/to/project/config/database.php
- ```
- 当然建议是在项目级别设置时区。在 .env 中指定 `DB_TIMEZONE=PRC` 和在 database 中指定 `'timezone'  => env('DB_TIMEZONE', '+08:00')` 均可。
+导入时区的命令为 
+
+```bash
+shell> mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root --database=mysql -p
+```
+
+建议是在项目级别设置时区。在 .env 中指定 `DB_TIMEZONE=+08:00` 和在 database 中指定 `'timezone'  => env('DB_TIMEZONE', '+08:00')` 均可。
 
 ## 总结
-时区设置无非就是 PHP 配置以及运行时配置，而在 lumen 中还涉及到环境变量的配置。lumen 中既可以在 config 目录下的文件中指定，也可以在 .env 文件中指定。建议既指定 PHP 的配置又指定环境变量的配置，环境变量的配置可供整个应用程序使用，是项目级别的共享配置。
+时区设置分为PHP 时区设置和 MySQL 的时区设置。PHP 时区设置涉及到 php.ini 配置以及运行时配置，而在 lumen 中还涉及到环境变量的配置。lumen 中既可以在 config 目录下的文件中指定，也可以在 .env 文件中指定。建议既指定 PHP 的配置又指定环境变量的配置，环境变量的配置可供整个应用程序使用，是项目级别的共享配置。
