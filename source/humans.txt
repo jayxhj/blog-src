@@ -1,0 +1,15 @@
+/* TEAM */
+Name: jayxhj
+Email: jayxhj@gmail.com
+Twitter: @jayxhj
+GitHub: https://github.com/jayxhj
+Location: Beijing, China
+
+/* THANKS */
+Name: https://github.com/tommy351
+
+/* SITE */
+Site URL: http://blog.jayxhj.com
+Language: Chinese
+Components: Node.js
+Software: Atom, iTerm 2, Mou, MWeb, GitHub
