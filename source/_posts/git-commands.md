@@ -36,8 +36,8 @@ git push -u origin --tags # pushes up any tags`
 ## 分支重命名
 
 1. 修改当前分支 `git branch -m <newname>`
-2. 未提交至 remote  `git branch -m <oldname> <newname>`
-3. 已提交至 remote 需新加分支 `git push origin <newname>:<newname>` 并删除旧的远程分支 `git push origin  :<newname>`
+2. 未提交至 remote `git branch -m <oldname> <newname>`
+3. 已提交至 remote 需新加分支 `git push origin <newname>:<newname>` 并删除旧的远程分支 `git push origin :<newname>`
 
 ## 从某个分支上线
 
@@ -46,3 +46,10 @@ git push -u origin --tags # pushes up any tags`
 1. checkout 到指定分支 `git checkout [revision]` [revision] 代表指定 commit 的 hash
 2. 以当前 commit 创建分支 `git checkout -b [branchName]` [branchName] 为分支名
 3. 推送至远程 `git push origin branchName:branchName`
+
+## 添加多个远程分支
+
+```bash
+git remote set-url origin --push --add <a remote>
+git remote set-url origin --push --add <another remote>
+```
