@@ -53,3 +53,13 @@ git push -u origin --tags # pushes up any tags`
 git remote set-url origin --push --add <a remote>
 git remote set-url origin --push --add <another remote>
 ```
+
+## 错误 merge 了某个分支后撤销
+
+场景：当某个功能开发并自测完毕，需要 merge 到测试环境进行测试时，如果不小心 merge 错了分支，这时候需要撤销这个 merge 。如果是使用 Pull Request 进行分支合并的话，直接 close 就可以了，但如果是使用命令行进行操作的话，本地的分支实际上已经与待 merge 的分支进行合并了，需要回到 merge 前。
+
+只需要两个一个操作：找到 merge 前的 commit hash ，并 reset --hard
+
+```bash
+>git reset --hard <commit hash>
+```
