@@ -7,11 +7,7 @@ date: 2015-12-10T20:15:55.000Z
 tags: Git
 ---
 
-Git 常用操作
-
 --------------------------------------------------------------------------------
-
-# Git 常用操作
 
 ## Git 忽略已追踪文件的修改
 
@@ -61,5 +57,16 @@ git remote set-url origin --push --add <another remote>
 只需要两个一个操作：找到 merge 前的 commit hash ，并 reset --hard
 
 ```bash
->git reset --hard <commit hash>
+git reset --hard <commit hash>
 ```
+
+## 强制提交，覆盖错误的提交
+
+场景：如果不小心将某个提交推送到远程，又不想这个提交留在历史里，就需要强制覆盖远程。
+
+```bash
+git checkout -b <branchName> <commit hash> # commit hash 为错误提交的前一个提交 hash
+git push origin branchName -f # 强制提交
+```
+
+备注：对于个人开发或者比较私密的信息不小心提交了才建议这么做，否则还是直接 revert 错误的提交。
