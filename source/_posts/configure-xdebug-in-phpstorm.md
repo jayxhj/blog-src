@@ -85,7 +85,7 @@ PHPStorm 文档里介绍了如何配置 Xdebug <https://www.jetbrains.com/help/p
   1. 配置 **Debug Port** ，让其与 php.ini 中的 `xdebug.remote_port`端口号相同。
   2. 接收 Xdebug 与 PHPStorm 的连接，**Can accept external connections**
 
-3. 当程序运行至端点处时，自动停止，开启这个选项 **Run | Break at first line in PHP scripts**
+3. 监听外部的 debug 连接，开启这个选项 **Run | Start Listening for PHP debug connections**
 
 通过上面的配置，就可以在 PHPStorm 运行 Xdebug 了。不过这还不够，需要配置具体的项目，这样 Xdebug 才知道如何运行，并在指定的断点处停止并通知 PHPStorm 。
 
