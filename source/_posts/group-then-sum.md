@@ -7,11 +7,11 @@ date: 2013-11-05T10:04:02.000Z
 tags: MySQL
 ---
 
-在数据库操作中常常会将某一列的具有相似性质的数据进行求和，昨天在做的项目中遇到了。 后来请教了一下自己又摸索了一下，得出了解决方案，那就是**分组求和**。 需求：将某列数据求和 例子：数据库内容为： ![数据库内容](http://img.jayxhj.com/mysql-group-all-records.png)
+在数据库操作中常常会将某一列的具有相似性质的数据进行求和，昨天在做的项目中遇到了。 后来请教了一下自己又摸索了一下，得出了解决方案，那就是**分组求和**。 需求：将某列数据求和 例子：数据库内容为： ![数据库内容](//blog.jayxhj.com/images/mysql-group-all-records.png)
 
-根据record_type进行分组再求和，也就是将1、2、3三种类型进行分组，所以结果预期为三行 ![根据record_type分组](http://img.jayxhj.com/mysql-group-by-record-type.png)
+根据record_type进行分组再求和，也就是将1、2、3三种类型进行分组，所以结果预期为三行 ![根据record_type分组](//blog.jayxhj.com/images/mysql-group-by-record-type.png)
 
-再一种是根据record_date来分组，由于日期有两组，故预期分组也为两组，结果为同一日期的c、d列数据相加 ![根据record_date进行分组](http://img.jayxhj.com/mysql-group-by-record-date.png)
+再一种是根据record_date来分组，由于日期有两组，故预期分组也为两组，结果为同一日期的c、d列数据相加 ![根据record_date进行分组](//blog.jayxhj.com/images/mysql-group-by-record-date.png)
 
 总结：当需要进行对某一列的具有相似条件（对应于where中的条件）的数据进行合并时，使用group by将记录分组，再使用聚合函数对数据进行需要的操作。这样就可以使用一条语句将所有的数据进行分组求和。
 

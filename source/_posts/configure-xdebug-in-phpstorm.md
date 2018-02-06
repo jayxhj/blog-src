@@ -93,7 +93,7 @@ PHPStorm 文档里介绍了如何配置 Xdebug <https://www.jetbrains.com/help/p
 
 下图中显示了如何配置某个 debug 项目。
 
-![debug configuration](http://img.jayxhj.com/add-debug-configuration.png)
+![debug configuration](//blog.jayxhj.com/images/add-debug-configuration.png)
 
 选择 **PHP Web Application** 即可配置某个 web 项目，设置项目的 url 及当前配置的名称即可。
 

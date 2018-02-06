@@ -47,11 +47,11 @@ PathPicker 是 bash 脚本和一些 Python 模块 结合后的产物。 它主�
 
 当改了很多文件需要提交提交时，查看当前状态 `git status`
 
-![git add before](http://img.jayxhj.com/PathPicker-git-add-before.jpg)
+![git add before](//blog.jayxhj.com/images/PathPicker-git-add-before.jpg)
 
 将输出重定向至 PathPicker `git stataus | fpp`
 
-![git status|fpp](http://img.jayxhj.com/PathPicker-git-statusfpp-after.png)
+![git status|fpp](//blog.jayxhj.com/images/PathPicker-git-statusfpp-after.png)
 
 - 已选中为绿色
 - 已选中且当前光标悬停显示为红色
@@ -60,7 +60,7 @@ PathPicker 是 bash 脚本和一些 Python 模块 结合后的产物。 它主�
 
 提交选定的文件 `git commit $F`
 
-![git commit $F](http://img.jayxhj.com/PathPicker-git-commit-F.png)
+![git commit $F](//blog.jayxhj.com/images/PathPicker-git-commit-F.png)
 
 PathPicker 官网见 <http://facebook.github.io/PathPicker/>
 

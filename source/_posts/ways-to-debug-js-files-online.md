@@ -60,13 +60,13 @@ macOS 系统下，Web 调试代理软件一般使用 [Charles](https://www.charl
 
 1. 设置 Charles 为系统代理，代理 Chrome 的网络连接。
 
-  这个步骤，需要开启 Charles ，并设置 Charles 为系统代理。Firefox 可以直接设置，Chrome 网络设置实际上就是修改的系统的网络设置，步骤为 **系统偏好设置 -> 网络 -> 高级 -> 代理** 一图胜千言 ![系统代理](http://img.jayxhj.com/ServeAsSystemProxy.jpeg)
+  这个步骤，需要开启 Charles ，并设置 Charles 为系统代理。Firefox 可以直接设置，Chrome 网络设置实际上就是修改的系统的网络设置，步骤为 **系统偏好设置 -> 网络 -> 高级 -> 代理** 一图胜千言 ![系统代理](//blog.jayxhj.com/images/ServeAsSystemProxy.jpeg)
 
 2. Map Local
 
   使用 Chrome 请求网页， 即可在 Charles 中查看到当前网页所有资源对应的请求，将某个 JS 文件映射到要用作代理的本地 JS 文件，或者粗暴点，直接代理目录，就可以代理文件夹下的所有 JS 了。
 
-  ![map local](http://img.jayxhj.com/MapLocal.jpeg)
+  ![map local](//blog.jayxhj.com/images/MapLocal.jpeg)
 
 这个方式下，当在本地修改 JS 后，能直接在线上环境看到效果，最重要的是，免去了修改 JS 后上线 JS 不生效的问题。归根结底，本地修改，上线再看效果这种原始的方式，本该淘汰。
 
@@ -79,13 +79,13 @@ macOS 系统下，Web 调试代理软件一般使用 [Charles](https://www.charl
 1. 将本地文件添加到 workspace
 
   - 开启调试面板，切换至 Sources 选项卡
-  - 右击选择 **Add Folder to Workspace** ![Add Folder to Workspace](http://img.jayxhj.com/addfolder.png)
+  - 右击选择 **Add Folder to Workspace** ![Add Folder to Workspace](//blog.jayxhj.com/images/addfolder.png)
   - 选择要代理的本地的文件夹
   - 点击地址栏下方弹出来的窗口，选择 **允许** ，Chrome 才能获得访问本地文件的权限
 
 2. Map to File System Resource
 
-  选择要代理的文件，Chrome 将自动列出可以映射的文件，此时就建立了远程文件与本地文件的映射。 ![Map to File System Resource](http://img.jayxhj.com/maptoresource.png)
+  选择要代理的文件，Chrome 将自动列出可以映射的文件，此时就建立了远程文件与本地文件的映射。 ![Map to File System Resource](//blog.jayxhj.com/images/maptoresource.png)
 
 设置好之后当 debug 好之后，可以直接将修改持久化到本地的文件，再也不用复制粘贴了。
 

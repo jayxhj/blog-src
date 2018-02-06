@@ -25,7 +25,7 @@ date: 2013-03-28 20:45:44
 
 定位到配置文件中的&lt;aop:config&gt;可以看到如下提示
 
-<input alt="" src="http://img.jayxhj.com/aop-config.png" type="image" />
+<input alt="" src="//blog.jayxhj.com/images/aop-config.png" type="image" />
 
 Aop的配置如下
 

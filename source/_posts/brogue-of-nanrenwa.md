@@ -27,38 +27,38 @@ categories: life
 
 难的不是拍图，也不是排版，难的是给图片起名字，卒。
 
-![男人袜使命](http://img.jayxhj.com/nanrenwa/goal.jpg)
+![男人袜使命](//blog.jayxhj.com/images/nanrenwa/goal.jpg)
 
-![男人袜，你的生活助理](http://img.jayxhj.com/nanrenwa/nanrenwa.jpg)
+![男人袜，你的生活助理](//blog.jayxhj.com/images/nanrenwa/nanrenwa.jpg)
 
-![丝绸包裹袋](http://img.jayxhj.com/nanrenwa/silk-packing.jpg)
+![丝绸包裹袋](//blog.jayxhj.com/images/nanrenwa/silk-packing.jpg)
 
-![鞋](http://img.jayxhj.com/nanrenwa/shoe.jpg)
+![鞋](//blog.jayxhj.com/images/nanrenwa/shoe.jpg)
 
-![鞋前部](http://img.jayxhj.com/nanrenwa/front-side.jpg)
+![鞋前部](//blog.jayxhj.com/images/nanrenwa/front-side.jpg)
 
-![侧边](http://img.jayxhj.com/nanrenwa/side-inboard.jpg)
+![侧边](//blog.jayxhj.com/images/nanrenwa/side-inboard.jpg)
 
-![后跟](http://img.jayxhj.com/nanrenwa/heel.jpg)
+![后跟](//blog.jayxhj.com/images/nanrenwa/heel.jpg)
 
-![后脚掌](http://img.jayxhj.com/nanrenwa/back-sole.jpg)
+![后脚掌](//blog.jayxhj.com/images/nanrenwa/back-sole.jpg)
 
-![前脚掌](http://img.jayxhj.com/nanrenwa/forward-sole.jpg)
+![前脚掌](//blog.jayxhj.com/images/nanrenwa/forward-sole.jpg)
 
-![莱卡皮筋](http://img.jayxhj.com/nanrenwa/lycra-elastic.jpg)
+![莱卡皮筋](//blog.jayxhj.com/images/nanrenwa/lycra-elastic.jpg)
 
-![内里](http://img.jayxhj.com/nanrenwa/inside.jpg)
+![内里](//blog.jayxhj.com/images/nanrenwa/inside.jpg)
 
-![前脚掌鞋垫，猪皮内里](http://img.jayxhj.com/nanrenwa/hogskin-insole.jpg)
+![前脚掌鞋垫，猪皮内里](//blog.jayxhj.com/images/nanrenwa/hogskin-insole.jpg)
 
-![鞋撑](http://img.jayxhj.com/nanrenwa/footgear.jpg)
+![鞋撑](//blog.jayxhj.com/images/nanrenwa/footgear.jpg)
 
-![保养护理套装](http://img.jayxhj.com/nanrenwa/maintain-suit-all.jpg)
+![保养护理套装](//blog.jayxhj.com/images/nanrenwa/maintain-suit-all.jpg)
 
-![套装坦荡荡](http://img.jayxhj.com/nanrenwa/maintain-suit.jpg)
+![套装坦荡荡](//blog.jayxhj.com/images/nanrenwa/maintain-suit.jpg)
 
-![潘多拉魔盒](http://img.jayxhj.com/nanrenwa/pandora.jpg)
+![潘多拉魔盒](//blog.jayxhj.com/images/nanrenwa/pandora.jpg)
 
-![男人袜愿景](http://img.jayxhj.com/nanrenwa/glasses.jpg)
+![男人袜愿景](//blog.jayxhj.com/images/nanrenwa/glasses.jpg)
 
 访问 [男人袜官网](http://t.cn/RZ9OcKw)，体验好产品。

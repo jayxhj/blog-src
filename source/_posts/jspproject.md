@@ -10,7 +10,7 @@ date: 2012-12-19T20:12:22.000Z
 
 JSP工程在第一次创建时要求输入工程名，默认的访问路径为/project_name，比如工程名为test，则默认的访问路径为<http://localhost:8080/test> 当然也可以修改路径，需在图中的Context root URL 内修改:
 
-![modify Context root url ](http://img.jayxhj.com/new-web-service-project.jpg)
+![modify Context root url ](//blog.jayxhj.com/images/new-web-service-project.jpg)
 
 假如后来无意中修改了工程名，又不记得当初设置的访问路径，那么只需用记事本打开工程的配置文件
 

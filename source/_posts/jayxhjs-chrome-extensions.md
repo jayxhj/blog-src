@@ -20,9 +20,9 @@ Chrome 浏览器和 Firefox 浏览器为何大受欢迎，其中一个重要原�
 
 开发者网站：<https://github.com/anasnakawa/chrome-github-avatars>
 
-![GitHub-feed-before](http://img.jayxhj.com/GitHub-feed-before.png)
+![GitHub-feed-before](//blog.jayxhj.com/images/GitHub-feed-before.png)
 
-![GitHub-feed-after](http://img.jayxhj.com/GitHub-feed-before.png)
+![GitHub-feed-after](//blog.jayxhj.com/images/GitHub-feed-before.png)
 
 ## Axure RP Extension for Chrome
 
@@ -54,7 +54,7 @@ Chrome 浏览器和 Firefox 浏览器为何大受欢迎，其中一个重要原�
 
 使用：主要用来进行 ip 与 host 之间的绑定，另外可以对域名 ip 进行分组，非常适合用来进行切换环境。另外一个主要功能就是显示当前 ip ，在没有挂代理的情况下，可以显示当前页面的服务器 ip 。
 
-![显示当前页面 ip](http://img.jayxhj.com/chrome-hosts-manager.jpg)
+![显示当前页面 ip](//blog.jayxhj.com/images/chrome-hosts-manager.jpg)
 
 ## JSON Editor
 
